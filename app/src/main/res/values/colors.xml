@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="miColor">#FF0000</color>
+    <color name="fondo">#FB95E2</color>
+    <color name="barra">#F8E2A2</color>
+</resources>
