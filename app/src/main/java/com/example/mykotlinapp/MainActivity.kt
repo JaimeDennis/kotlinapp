@@ -1,4 +1,4 @@
-package com.example.appmenubutton
+package com.example.mykotlinapp
 
 import android.os.Bundle
 import android.widget.Toast
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.btnDb -> {
-                    changeFrame(DbFragment())
+                    changeFrame(DBFragment())
                     true
                 }
                 R.id.btnAcerca -> {

@@ -1,4 +1,4 @@
-package com.example.appmenubutton
+package com.example.mykotlinapp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -23,7 +23,7 @@ class ListFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    private lateinit var listview: ListView
+    private lateinit var listView: ListView
     private lateinit var arrayList: ArrayList<String>
     private lateinit var adapter: ArrayAdapter<String>
 
@@ -40,21 +40,19 @@ class ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view =inflater.inflate(R.layout.list_fragment, container, false)
-        ListView = view.findViewById(R.id.lstAlumnos)
+        val view = inflater.inflate(R.layout.list_fragment, container, false)
+        listView = view.findViewById(R.id.lstAlumnos)
 
-        //lee los alumnos del array string los pone en la variable items
+        // lee los alumnos
         val items = resources.getStringArray(R.array.alumnos)
 
-        //Inicia el objeto arrayList y agrega TODOS los Items
+        // inicia objetos arrayList
         arrayList = java.util.ArrayList()
         arrayList.addAll(items)
 
-        //inicio el adaptador con estilo y el arraylist
-        adapter = ArrayAdapter(requireContext()),android.R.layout.simple_list_item_1,arraylist)
+        adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, arrayList)
 
-        //Asigna el adapter al ListView
-        ListView.adapter=adapter
+        listView.adapter = adapter
 
         return view
     }
