@@ -5,8 +5,8 @@
     <string name="sfrmDb">Acceso a Datos</string>
     <string name="sfrmAc">Acerca de</string>
     <string name="alumno">Rodriguez Dennis Jaime</string>
-    <string name="materia">PROGRAMACIÓN MÓVIL</string>
-    <string name="carrera">ING. TECNOLOGÍAS DE LA INFORMACIÓN</string>
+    <string name="materia">Programacion Movil</string>
+    <string name="carrera">ING. Tecnologias de la Informacion</string>
     <string-array name="alumnos">
         <item>QUEZADA RAMOS JULIO EMILIANO</item>
         <item>RAMÍREZ MANRÍQUEZ JOSÉ LUIS</item>
@@ -42,4 +42,6 @@
         <item>RENDON ESTRADA JORGE</item>
         <item>TIRADO ROMERO JUAN JOSÉ</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

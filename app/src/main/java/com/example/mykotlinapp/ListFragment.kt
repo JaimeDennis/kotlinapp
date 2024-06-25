@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import androidx.appcompat.app.AlertDialog
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -40,7 +42,7 @@ class ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.list_fragment, container, false)
+        val view = inflater.inflate(R.layout.fragment_list, container, false)
         listView = view.findViewById(R.id.lstAlumnos)
 
         // lee los alumnos
@@ -54,6 +56,17 @@ class ListFragment : Fragment() {
 
         listView.adapter = adapter
 
+        listView.setOnItemClickListener(AdapterView.OnItemClickListener { parent, view, position, id ->
+
+            var alumno:String = parent.getItemAtPosition(position).toString()
+            val builder = AlertDialog.Builder(requireContext())
+            builder.setTitle("Lista de Alumnos")
+            builder.setMessage(position.toString()+":"+alumno)
+            builder.setPositiveButton("ok"){ dialog, which ->
+                //amen
+            }
+            builder.show()
+        })
         return view
     }
 

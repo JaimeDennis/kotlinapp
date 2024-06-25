@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.btnDb -> {
-                    changeFrame(DBFragment())
+                    changeFrame(DbFragment())
                     true
                 }
                 R.id.btnAcerca -> {
