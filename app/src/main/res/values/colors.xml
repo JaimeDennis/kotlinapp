@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="miColor">#CF5301</color>
-    <color name="fondo">#CF59B2</color>
-    <color name="barra">#FFE496</color>
+    <color name="miColor">#6A5151</color>
+    <color name="fondo">#E63F79</color>
+    <color name="barra">#FFFFFF</color>
 </resources>

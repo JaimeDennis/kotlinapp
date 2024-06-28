@@ -7,7 +7,7 @@
     <string name="alumno">Rodriguez Dennis Jaime</string>
     <string name="materia">Programacion Movil</string>
     <string name="carrera">ING. Tecnologias de la Informacion</string>
-    <string-array name="alumnos">
+    <string-array name="alumnos" textcolor="Black">
         <item>QUEZADA RAMOS JULIO EMILIANO</item>
         <item>RAMÍREZ MANRÍQUEZ JOSÉ LUIS</item>
         <item>GARCIA BUSTAMANTE GAEL ALEJANDRO</item>
