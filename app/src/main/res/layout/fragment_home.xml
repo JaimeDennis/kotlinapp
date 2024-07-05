@@ -21,58 +21,75 @@
             android:rotationX="-6"
             android:scaleType="centerCrop"
             android:src="@mipmap/alumno" />
-
+        <!-- Nombre del Alumno -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
-            android:gravity="center"
             android:text="Nombre Alumno"
+            android:textSize="22sp"
             android:textColor="#ffff"
-            android:textSize="22sp" />
+            android:layout_gravity="center"/>
+        <!-- Detalle del Alumno -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:textSize="14sp"
             android:text="@string/alumno"
             android:textStyle="bold"
             android:textColor="#ffff"
-            android:gravity="center"/>
-        <TextView
+            android:layout_gravity="center"/>
+
+
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:layout_marginTop="10sp"
-            android:text="Carrera"
-            android:textColor="#ffff"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="20dp"
-            android:textSize="14sp"
-            android:textColor="#ffff"
-            android:text="@string/carrera"
-            android:textStyle="bold"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:layout_marginTop="10sp"
-            android:text="Materia"
-            android:textColor="#ffff"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="20dp"
-            android:textSize="14sp"
-            android:text="@string/materia"
-            android:textStyle="bold"
-            android:textColor="#ffff"
-            android:gravity="center"/>
+            android:columnCount="2"
+            android:rowCount="4"
+            android:layout_marginTop="30sp">
+
+
+            <!-- Número de Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teléfono"
+                android:textSize="22sp"
+                android:textColor="#ffff"
+                android:layout_gravity="center"/>
+
+
+
+            <!-- Tu Número de Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Telefono"
+                android:textSize="12sp"
+                android:textColor="#ffff"
+                android:layout_gravity="center"/>
+
+            <!-- Carrera del Alumno -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carrera"
+                android:textSize="22sp"
+                android:textColor="#ffff"
+                android:layout_gravity="center"/>
+
+            <!-- Materia del Alumno -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="12sp"
+                android:text="@string/materia"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:layout_gravity="center"/>
+        </GridLayout>
+
     </LinearLayout>
 
 </FrameLayout>

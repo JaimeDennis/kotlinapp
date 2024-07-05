@@ -6,20 +6,133 @@
     tools:context=".DbFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20sp">
+        android:layout_height="match_parent">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sfrmDb"
-            android:textSize="25sp"
-            android:textColor="@color/miColor"
-            android:gravity="center"
-            android:background="@color/barra"/>
-    </LinearLayout>
+            android:orientation="vertical"
+            android:padding="20sp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="547dp"
+                android:layout_marginTop="30sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Matrícula" />
+
+                <EditText
+                    android:id="@+id/inMatrciula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Matricula"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre" />
+
+                <EditText
+                    android:id="@+id/inNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Domicilio" />
+
+                <EditText
+                    android:id="@+id/inDomicilio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Domicilio" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto" />
+
+                <ImageView
+                    android:id="@+id/imgAlumno"
+                    android:layout_width="136dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/foto" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Especialidad" />
+
+                <EditText
+                    android:id="@+id/inEspecialidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Especialidad" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="URL foto" />
+
+                <EditText
+                    android:id="@+id/inUrlImagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="URL" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnGuardar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:layout_weight="1"
+                        android:textSize="9.5dp"
+                        android:background="@drawable/button_ripple"
+                        android:text="Guardar"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnBuscar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:background="@drawable/button_ripple"
+                        android:text="Buscar"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnBorrar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:background="@drawable/button_ripple"
+                        android:enabled="false"
+                        android:text="Borrar"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

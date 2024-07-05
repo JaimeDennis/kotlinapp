@@ -5,4 +5,6 @@
     <color name="miColor">#6A5151</color>
     <color name="fondo">#E63F79</color>
     <color name="barra">#FFFFFF</color>
+    <color name="ripple">#FFFFFF</color>
+    <color name="button">#DE1259</color>
 </resources>

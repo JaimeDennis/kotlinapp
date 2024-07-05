@@ -3,7 +3,7 @@ package com.example.mykotlinapp.database
 import android.provider.BaseColumns
 
 class DefinirDB {
-    object Alumnos :BaseColumns{
+    object Alumnos : BaseColumns {
         const val TABLA = "alumnos"
         const val ID = "id"
         const val MATRICULA = "matricula"
