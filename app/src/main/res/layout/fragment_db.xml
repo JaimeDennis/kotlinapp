@@ -3,136 +3,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".DbFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10sp">
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20sp">
+            android:text="Matricula"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="547dp"
-                android:layout_marginTop="30sp"
-                android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Matricula"
+            android:id="@+id/txtMatricula"
+            android:inputType="number"
+            android:minHeight="48dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre completo"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"/>
 
-                <TextView
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Completo"
+            android:id="@+id/txtNombre"
+            android:minHeight="48dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domicilio"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Direccion #xxxx"
+            android:id="@+id/txtDomicilio"
+            android:minHeight="48dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Añadir foto"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgProfilePic"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8dp"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            android:src="@mipmap/foto"
+            app:shapeAppearanceOverlay="@style/circle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Especialidad"
+            android:id="@+id/txtEspecialidad"
+            android:minHeight="48dp" />
+        <TextView
+            android:id="@+id/lblUrlFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Url Foto"
+            android:textSize="18dp"
+            android:layout_marginTop="12dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginTop="16dp">
+            <TableRow
+                android:layout_gravity="center_vertical">
+                <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Matrícula" />
-
-                <EditText
-                    android:id="@+id/inMatrciula"
+                    android:text="Guardar"
+                    android:id="@+id/btnGuardar"
+                    android:backgroundTint="@color/black"
+                    android:layout_span="3"
+                    android:layout_marginRight="10dp"/>
+                <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Matricula"
-                    android:inputType="number" />
+                    android:text="Buscar"
+                    android:id="@+id/btnBuscar"
+                    android:backgroundTint="@color/black"
+                    android:layout_span="3"
+                    android:layout_marginLeft="10dp"/>
 
-                <TextView
+                <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre" />
+                    android:text="Borrarr"
+                    android:id="@+id/btnBorrar"
+                    android:backgroundTint="@color/black"
+                    android:layout_span="3"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
 
-                <EditText
-                    android:id="@+id/inNombre"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Nombre" />
+        </TableLayout>
+    </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Domicilio" />
-
-                <EditText
-                    android:id="@+id/inDomicilio"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Domicilio" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Foto" />
-
-                <ImageView
-                    android:id="@+id/imgAlumno"
-                    android:layout_width="136dp"
-                    android:layout_height="67dp"
-                    android:layout_gravity="center"
-                    android:src="@mipmap/foto" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Especialidad" />
-
-                <EditText
-                    android:id="@+id/inEspecialidad"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Especialidad" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="URL foto" />
-
-                <EditText
-                    android:id="@+id/inUrlImagen"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="URL" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20sp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/btnGuardar"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5sp"
-                        android:layout_weight="1"
-                        android:textSize="9.5dp"
-                        android:background="@drawable/button_ripple"
-                        android:text="Guardar"
-                        android:textColor="@color/black" />
-
-                    <Button
-                        android:id="@+id/btnBuscar"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5sp"
-                        android:layout_weight="1"
-                        android:textSize="10dp"
-                        android:background="@drawable/button_ripple"
-                        android:text="Buscar"
-                        android:textColor="@color/black" />
-
-                    <Button
-                        android:id="@+id/btnBorrar"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5sp"
-                        android:layout_weight="1"
-                        android:textSize="10dp"
-                        android:background="@drawable/button_ripple"
-                        android:enabled="false"
-                        android:text="Borrar"
-                        android:textColor="@color/black" />
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
 </FrameLayout>

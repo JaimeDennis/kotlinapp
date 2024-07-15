@@ -2,9 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="miColor">#6A5151</color>
-    <color name="fondo">#E63F79</color>
+    <color name="miColor">#B12929</color>
+    <color name="fondo">#A9A9A9</color>
     <color name="barra">#FFFFFF</color>
-    <color name="ripple">#FFFFFF</color>
-    <color name="button">#DE1259</color>
+    <color name="ripple">#7A0F0F</color>
+    <color name="button">#001D87</color>
 </resources>

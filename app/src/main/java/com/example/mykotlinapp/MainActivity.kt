@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun init() {
         bottomNavigationView = findViewById(R.id.btnNavegator)
+
         changeFrame(HomeFragment())
         bottomNavigationView.setOnItemSelectedListener {
                 menuItem ->

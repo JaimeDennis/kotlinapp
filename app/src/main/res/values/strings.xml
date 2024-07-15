@@ -45,4 +45,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Telefono">(+52) 669 336 2323</string>
+    <string name="lista_de_alumnos">Lista de Alumnos</string>
+    <string name="ejemplo_especialidad">Ing- en tecnologias de la informacion</string>
+    <string name="ejemploMatricula">2021030094</string>
+    <string name="guardar">Guardar</string>
 </resources>
